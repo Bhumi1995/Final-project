@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600;700;800&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500&family=Satisfy&family&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section-todo-list {
+  width: 375px;
+  height: 667px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #b3cdd1;
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.section-todo-list h2 {
+  font-size: 42px;
+  margin: 30px 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+.input-btn {
+  display: flex;
+  margin-bottom: 10%;
+}
+.input-btn input {
+  width: 100%;
+  border: none;
+  font-size: 19px;
+  padding: 10px;
+}
+
+.input-btn input:focus {
+  outline: none;
+}
+.input-btn button {
+  width: 30%;
+  padding: 5px 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-left: 5px;
+}
+.input-btn button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s 0s ease;
+}
+.input-btn button:not(:hover) {
+  transition: all 0.5s 0s ease;
+}
+.list-tasks {
+  margin-bottom: 11%;
+}
+.list-tasks ul {
+  padding-left: 0;
+  margin: 0 13px;
+}
+.list-tasks li {
+  font-size: 18px;
+  display: flex;
+  min-width: 300px;
+  gap: 100px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.list-tasks li span {
+  border-radius: 50%;
+  padding: 1px 8px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  height: 26px;
+}
+.list-tasks li span:hover {
+  background-color: black;
+  color: white;
+}
+
+/*remove all btn*/
+
+.remove-all {
+  border-radius: none;
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 9px 16px;
+}
+.remove-all:hover {
+  background-color: #fff;
+  color: black;
+  border: none;
+  transition: all 0.5s 0s ease;
+}
+.remove-all:not(:hover) {
+  transition: all 0.5s 0s ease;
+}
